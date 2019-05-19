@@ -1,0 +1,225 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-size: cover;
+	background-color: #dee9f4: 
+	width: 100%;
+}
+header {
+	float: center;
+	background-size: cover;
+	width: 100%;
+}
+h1 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 2em;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+	color: #fb757f;
+	padding: 10px;
+	margin: 5px 10px;
+}
+h2 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-shadow: 1px 1px 1px black;
+	color: #fb757f;
+	padding: 8px;
+	margin: 8px;
+} 
+h3 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fb757f;
+	color: #000;
+	padding: 5px;
+	margin: 5px;
+}
+h2 span {
+	color: #4F7944;
+}
+h3 span {
+	color: #4F7944;
+}
+p {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	text-align: justify;
+	line-height: 1.5em;
+	color: #fb757f;
+	margin: 15px;
+}
+p span {
+	color: #4F7944;
+}
+.reser-item {
+	text-align: center;
+}
+.title {
+	text-align: center;
+}
+.table1 {
+/*	background-image: url("../images/TomsRestCR.gif");*/
+	float: center;
+	background-color: darkred;
+	font-family: Tahoma, Arial, sans-serif;	clear: both;
+	width: 90%;
+}
+.clearfix:after {
+	clear: both;
+	visibility: hidden;
+	display: block;
+	content: "";
+	height: 0;
+	font-size: 0;
+}
+a:hover {
+	color: red;
+}
+div {
+	font-size: 1em;
+	padding: 0px;
+	display: inline-block;
+}
+#hcolumn1 {
+	float: left;
+	display: block;
+	width: 20%;
+	margin: 0px;
+}
+#hcolumn2 {
+	float: left;
+	/*display: inline-block;*/
+	width: 78%;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+#hcolumn2 h1 {
+	padding: 0px;
+	margin: 0px;
+}
+#hcolumn2 a {
+	font-family: Tahoma, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-shadow: 1px 1px 1px #CBE205;
+	color: black;
+	text-decoration: none;
+	background-image: url("../images/RFMould1_half.gif");
+	display: inline-block;
+	margin-top: 0px;
+	padding: 8px 12px;
+	box-shadow: 1px 1px 1px #000;
+}
+.columnimg {
+	width: 96%;
+	margin: 5px;
+}
+	/*background-color: black;
+	color: #CBE205;
+	box-shadow: 1px 1px 1px red;*/
+
+}
+@media screen and (min-width: 685px) and (max-width: 1024px) {
+nav { 
+	float: none;
+	width: 100%;
+}
+nav a {
+	padding: 10px;
+	margin: 15px 3px 15px 3px;
+}
+nav a span {
+	display: inline block;
+}			
+#hcolumn2 {
+	float: none;
+	width: 78%;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+#hcolumn1, #hcolumn3, #hcolumn4 {
+	display: none;
+}
+#hcolumn2 span {
+	color: #4F7944;
+}
+.footer2 a {
+	padding: 10px;
+}
+#footer3td a {
+	display: block;
+	color: #CBE205;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+	padding-left: 0px;
+	margin: 5px;
+}
+#footer3td p {
+	font-size: .3em;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+}
+@media only screen and (min-width: 230px) and (max-width: 685px) {
+nav {
+	margin-bottom: 15px;
+}
+nav a span {
+	display: none;
+}
+#hcolumn1, #hcolumn3, #hcolumn4 {
+	display: none;
+}
+#hcolumn2 {
+	float: none;
+	width: 95%;
+	margin: 5%;
+}
+#hcolumn2 h1 {
+	font-size: 2em;
+}
+#hcolumn2 h2 {
+	font-size: 1.2em;
+}
+.hdrimg22 {
+	display: block;
+	height: 35%;
+}
+#hdrimg2a, #hdrimg2b {
+	display: none;
+}
+.column {
+	float: none;
+	display: block;
+	width: 98%;
+}
+#column1, #column2, #column3 {
+	width: 98%;
+}
+.column h3 {
+	margin-top: 10px;
+	padding: 12px 5px:;
+}
+
+}
