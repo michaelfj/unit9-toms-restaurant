@@ -2,67 +2,75 @@
 <html>
 	
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>TOM'S RESTAURANT</title>
 	</head>
 	
 	<body>
-			<header>
-				<h1>TOM'S RESTAURANT</h1>
-				<img id="main_photo" src= "images/TomsRestCR.gif" width="100%" height="250px" padding="3%" alt="Tom's Restaurant">
-			</header>
-
 			<table>
 				<tr>
-					<td colspan="2" align="left" id="reserform">	
+					<td colspan="3" width="15%"></td>
+					<td colspan="3" width="70%">
+						<h1>TOM'S RESTAURANT</h1>
+						<img id="main_photo" src= "images/TomsRestCR.gif" width="100%" height="250px" padding="3%" alt="Tom's Restaurant">
+					</td>
+					<td colspan="3" width="15%"></td>
+				</tr>
+			
+				<tr colspan="3" width="15%"></tr>
+			</table>
+		
+			<table border="1" width=100%>
+				<tr>
+					<td colspan="2" width="50%" align="center" id="reserform">	
 							<h2>Reservations</h2>
 							<h3>Make a Reservation</h3>
 							<form id="reservForm">
 								<input type="text" id="name" placeholder="Name">
 								<input type="text id="day" placeholder="DD/MM/YYYY">
 								<button>Confirm Reservation</button>
+								<br><br>
 							</form>	
 					</td>
 					
-					<td colspan="2" align="left" id="reservationRecords">
-							
-							<h2>Existing Reservations</h2>
-						<table>
+					<td colspan="2" width="50%" align="center" id="reservationRecords">
+						<h2>Existing Reservations</h2>
+						<table border="1">
 							<thead>
 								<tr>
+									<th>Id</th>
 									<th>Name</th>
 									<th>Date</th>
 								</tr>
 							<thead>
 							<tbody class="reservItem"></tbody>
 
-						<script id="template" type="text/x-handlebars-template">
-							<tr id={{itemId}}>
-								<td>{{name}}</td>
-								<td>{{day}}</td>
-							</tr>
-						</script>	
+							<script id="template" type="text/x-handlebars-template">
+								<tr> 
+									<td>{{itemId}}></td>
+									<td>{{name}}</td>
+									<td>{{day}}</td>
+								</tr>
+							</script>	
 						</table>
 				</tr> 
 			</table>
 
 
-			<table>
+			<table border="1" width="100%">
 				<tr>
-					<td colspan="2" align="left" id="googlemap">
-						<h3>Come Dine with Us</h3>
+					<td colspan="2" width="50%" align="center" id="googlemap">
+						<h2>Come Dine with Us</h2>
+						<p>Google Map image should insert here:</p>
 						<div id="map" style="height:100vh"></div>
 					</td>
-			
-					<td colspan="2" align="right" id="reviewPanel">
-						<h3>Customer Reviews</h3>
+					<td colspan="2" width="50%" align="center" id="reviewPanel">
+						<h2>Customer Reviews</h2>
 						<p class="review"><i>"Big lettuce,  big carrots, tomatoes like volleyballs"</i>
 						<br>- Jerry Seinfield, on THE BIG SALAD</p>
 						<img class="cust-image" src="images/jerry.gif" width="96%" padding="3%" alt="customer image">
-
 					</td>
-					
 				</tr>
 			</table>
 <!--
